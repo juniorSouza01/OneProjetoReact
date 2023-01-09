@@ -95,7 +95,7 @@ export default function Home({ route }) {
     const funChecks = funHabit ? funHabit?.habitChecks : 0;
     setChecks(mindChecks + moneyChecks + bodyChecks + funChecks);
     if (
-      mindHabit?.progressBar === 1 ||
+      mindHabit?.progressBar === 0 ||
       moneyHabit?.progressBar === 0 ||
       bodyHabit?.progressBar === 0 ||
       funHabit?.progressBar === 0
