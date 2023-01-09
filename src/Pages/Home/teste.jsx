@@ -1,8 +1,8 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, TextInput } from "react-native";
 
-const UselessTextInput = () => {
-  const [text, onChangeText] = React.useState("Useless Text");
+const InserirTextInput = () => {
+  const [text, onChangeText] = React.useState("Inserir Text");
 
   return (
     <SafeAreaView>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default UselessTextInput;
+export default InserirTextInput;
