@@ -17,11 +17,14 @@ const InserirTextInput = () => {
 
 const styles = StyleSheet.create({
   input: {
-    height: 40,
+    height: 45,
+    width: 240,
     margin: 12,
     borderWidth: 1,
-    padding: 10,
+    textAlign: "center",
     backgroundColor: "#fff",
+    borderRadius: 8,
+    
   },
 });
 
