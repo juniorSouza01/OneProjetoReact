@@ -19,7 +19,7 @@ import TimeDatePicker from "../../Components/HabitPage/TimeDataPicker";
 import UpdateExcludeButtons from "../../Components/HabitPage/UpdateExcludeButtons";
 import DefaultButton from "../../Components/Common/DefaultButton";
 import HabitsService from "../../Services/HabitsService";
-import Teste from "../Home/Teste";
+import Area from "../Home/Area";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -181,9 +181,9 @@ export default function HabitPage({ route }) {
             <Text style={styles.title}>Configurações {"\n"} de hábito</Text>
             <Text style={styles.inputText}>Área</Text>
 
-              <Teste>
+              <Area>
                 
-              </Teste>
+              </Area>
 
             <Text style={styles.inputText}>Hábito</Text>
             <SelectHabit habit={habit} habitInput={setHabitInput} />
