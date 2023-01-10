@@ -182,7 +182,7 @@ export default function HabitPage({ route }) {
             <Text style={styles.inputText}>Área</Text>
 
               <Teste>
-
+                
               </Teste>
 
             <Text style={styles.inputText}>Hábito</Text>
