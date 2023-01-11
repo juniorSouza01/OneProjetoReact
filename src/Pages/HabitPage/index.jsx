@@ -12,7 +12,6 @@ import { useNavigation } from "@react-navigation/native";
 import * as Notifications from "expo-notifications";
 import NotificationService from "../../Services/NotificationService";
 
-import SelectHabit from "../../Components/HabitPage/SelectHabit";
 import SelectFrequency from "../../Components/HabitPage/SelectFrequency";
 import Notification from "../../Components/HabitPage/Notification";
 import TimeDatePicker from "../../Components/HabitPage/TimeDataPicker";
@@ -20,6 +19,7 @@ import UpdateExcludeButtons from "../../Components/HabitPage/UpdateExcludeButton
 import DefaultButton from "../../Components/Common/DefaultButton";
 import HabitsService from "../../Services/HabitsService";
 import Area from "../Home/Area";
+import Habito from "../Home/Habito";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -180,13 +180,15 @@ export default function HabitPage({ route }) {
           <View style={styles.mainContent}>
             <Text style={styles.title}>Configurações {"\n"} de hábito</Text>
             <Text style={styles.inputText}>Área</Text>
-
               <Area>
                 
               </Area>
 
             <Text style={styles.inputText}>Hábito</Text>
-            <SelectHabit habit={habit} habitInput={setHabitInput} />
+            <Habito>
+
+            </Habito>
+      
 
             <Text style={styles.inputText}>Frequência</Text>
             <SelectFrequency

@@ -1,7 +1,9 @@
+/*-----ALTERAR----*/
+
 import React, { useEffect, useState } from "react";
 import { Image, StyleSheet } from "react-native";
 import { SelectList } from "react-native-dropdown-select-list";
-import HabitsData from "../../../Database/HabitsData";
+import Habito from "../../Home/Habito";
 
 export default function SelectHabit({ habit, habitInput }) {
   const [selected, setSelected] = useState(
@@ -10,18 +12,10 @@ export default function SelectHabit({ habit, habitInput }) {
   const [data, setData] = useState();
 
   useEffect(() => {
-    if (habit?.habitArea === "Mente") {
-      setData(HabitsData.dataMind);
+    if (habit?.habitArea === " ") {
+      setData(Habito);
     }
-    if (habit?.habitArea === "Financeiro") {
-      setData(HabitsData.dataMoney);
-    }
-    if (habit?.habitArea === "Corpo") {
-      setData(HabitsData.dataBody);
-    }
-    if (habit?.habitArea === "Humor") {
-      setData(HabitsData.dataFun);
-    }
+
     habitInput(habit?.habitName ? habit?.habitName : undefined);
   }, []);
 
